@@ -2,9 +2,12 @@
   <img src="https://raw.githubusercontent.com/Art404/boiler404/master/boiler404.png" />
 </p>
 
-# boiler404
+# SVGenerate
 
-Isomorphic, React, ES6, Webpack based starter kit for quickly starting web app projects tailored for [art404](http://art404.com).
+
+SVG Editor Canvas to JPEG Exporter written in ReactJS.
+
+Web spack architecture is written in Isomorphic, React, ES6, Webpack based starter kit for quickly starting web app projects tailored for [art404](http://art404.com).
 
 > Based off a fork of Richard Krawll's [react-starter](https://github.com/richardkall/react-starter)
 

@@ -1,0 +1,65 @@
+.DesignEdit {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  height: 93%;
+  @media (orientation: landscape) {
+    @include flex-direction(row);
+    @include justify-content(center);
+  }
+}
+
+.DesignEdit__SectionOne {
+  @include flex(4 1 auto);
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(center);
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+  @media (orientation: portrait) {
+    @include flex(1 1 auto);
+    max-width: 1000px;
+  }
+}
+
+.DesignEdit__SectionTwo {
+  @include display(flex);
+  @include flex-direction(column);
+  @include flex(1 4 auto);
+  @include justify-content(center);
+  min-width: 350px;
+  max-width: 700px;
+  width: 100%;
+
+  .button {
+    @include display(flex);
+    @include justify-content(center);
+    background: blue;
+    padding: 5px;
+    border-radius: 40px 40px;
+    margin: 0 10px;
+    @include prefixer(box-shadow, 2px 2px 6px 0px rgba(150,150,150,0.75), webkit moz spec);
+    cursor: pointer;
+    &.off { opacity: 0.3; }
+  }
+}
+
+.DesignEdit__buttons {
+  @include display(flex);
+  @include flex(1 3 auto);
+  @include align-items(center);
+  @media (orientation: landscape) and (max-width: 350px) {
+    @include align-items(flex-end);
+    margin-bottom: 30px;
+  }
+}
+
+.canvas {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
